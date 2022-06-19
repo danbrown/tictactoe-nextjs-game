@@ -1,6 +1,6 @@
 import { useContext, createContext, useState, useEffect } from "react";
 import { Socket } from "socket.io-client";
-import socketService from "../services/socketService";
+import { SocketService } from "../services/SocketService";
 
 // context type interface
 export interface GameContextType {
@@ -39,7 +39,7 @@ export const GameProvider = ({ children }) => {
   const [socket, setSocket] = useState<Socket>();
 
   const connectSocket = async () => {
-    const io = await socketService.connect();
+    const io = await new SocketService().connect();
     setSocket(io);
   };
 

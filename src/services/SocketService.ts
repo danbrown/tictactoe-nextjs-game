@@ -1,7 +1,7 @@
 import { io, Socket } from "socket.io-client";
 import { DefaultEventsMap } from "socket.io/dist/typed-events";
 
-class SocketService {
+export class SocketService {
   public socket: Socket | null = null;
 
   public connect(
@@ -23,5 +23,3 @@ class SocketService {
     });
   }
 }
-
-export default new SocketService();

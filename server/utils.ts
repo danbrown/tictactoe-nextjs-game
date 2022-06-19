@@ -1,7 +1,4 @@
-/**
- * Normalize a port into a number, string, or false.
- */
-
+// Normalize a port into a number, string, or false.
 export function normalizePort(val) {
   var port = parseInt(val, 10);
 

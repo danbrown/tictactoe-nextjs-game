@@ -1,6 +1,6 @@
+import { Server } from "socket.io";
 import { mainController } from "./controllers/mainController";
 import { roomController } from "./controllers/roomController";
-import { Server } from "socket.io";
 import { gameController } from "./controllers/gameController";
 
 export default (httpServer) => {
